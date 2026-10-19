@@ -58,7 +58,7 @@ public class MeiaEntrada extends Ingresso {
 	 */
 	@Override 
 	public double valorIngresso() {
-		//TODO
-		return  0;
+		double total = (VALOR_ENTRADA*DESCONTO_MEIA) + lerAdicionais();
+		return total;
 	}
 }
