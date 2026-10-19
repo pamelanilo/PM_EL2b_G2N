@@ -124,16 +124,17 @@ public abstract class Ingresso {
 	 *
 	 * @return cupom descritivo do ingresso
 	 */
-	@Override 
+		@Override 
 	public String toString() {
-		
-		
 		return String.format(
-			"Aproveite o filme\n"+
-			"------------------\n"+
-			"Filme: %s"
-		)
+			"Aproveite o filme\n" +
+			"------------------\n" +
+			"Filme: %s\n" +
+			"Sessão: %s\n" +
+			"Valor: R$ %.2f",
+			this.filme, this.sessao, this.valorIngresso()
+		);
+	}
 
 		
 	}
-}
